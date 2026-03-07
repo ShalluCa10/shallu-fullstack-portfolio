@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  h2 Edit Skill
+
+  form(method="POST" action="/admin/skills/edit/"+skill._id)
+
+    label Name
+    input(type="text" name="name" value=skill.name required)
+
+    label Category
+    input(type="text" name="category" value=skill.category required)
+
+    label Level
+    input(
+      type="text"
+      name="level"
+      value=skill.level required
+    )
+
+    
+    br
+    button.btn(type="submit") Update Project

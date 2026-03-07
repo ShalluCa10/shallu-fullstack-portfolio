@@ -1,0 +1,33 @@
+extends layout
+
+block content
+
+  h2 Dashboard Overview
+
+  .stats
+
+    .card
+      h3 Total Projects
+      p.big #{projectCount}
+      a.btn(href="/admin/projects") View Projects
+
+    .card
+      h3 Total Skills
+      p.big #{skillCount}
+      a.btn(href="/admin/skills") View Skills
+
+  h3 Featured Projects
+
+  if featuredProjects.length
+    table
+      thead
+        tr
+          th Title
+          th Technologies
+      tbody
+        each project in featuredProjects
+          tr
+            td= project.title
+            td= project.technologies.join(", ")
+  else
+    p No featured projects yet

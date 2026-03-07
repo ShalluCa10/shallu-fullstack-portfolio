@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1 Add Project
+
+  form(method="POST" action="/admin/projects/add")
+
+    label Title
+    input(type="text", name="title", required)
+
+    label Description
+    textarea(name="description")
+
+    label Technologies (comma separated)
+    input(type="text", name="technologies", placeholder="React, Node.js, Firebase")
+
+    label GitHub Link
+    input(type="text", name="githubLink")
+
+    label Live Demo Link
+    input(type="text", name="liveLink")
+
+    label Featured Project
+    input(type="checkbox", name="featured")
+
+    br
+    button.btn(type="submit") Save

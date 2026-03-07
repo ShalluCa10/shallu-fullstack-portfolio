@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Add Skill
+
+  form(method="POST")
+  label Name
+    input(type="text", name="name", placeholder="Skill")
+    input(type="text", name="level", placeholder="Level")
+    input(type="text", name="category", placeholder="Category")
+    button(type="submit") Save

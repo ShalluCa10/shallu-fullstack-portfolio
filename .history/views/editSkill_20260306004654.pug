@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  h2 Edit Skill
+
+  if skill
+
+form action="/admin/skills/edit/{{id}}" method="POST">
+      label Name
+      input(type="text" name="name" value=skill.name required)
+
+      label Category
+      input(type="text" name="category" value=skill.category required)
+
+      label Level
+      input(type="text" name="level" value=skill.level required)
+
+      br
+      button.btn(type="submit") Update Skill
+
+  else
+    p Skill not found

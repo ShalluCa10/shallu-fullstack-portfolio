@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  h2 Skills
+
+  a.btn(href="/admin/skills/add") + Add Skill
+
+  table
+    thead
+      tr
+        th Name
+        th Category
+        th Level
+        th Actions
+
+    tbody
+      each skill in skills
+        tr
+          td= skill.name
+          td= skill.category
+          td= skill.level
+
+          td
+            a.small-btn.delete(href="/admin/skills/delete/"+skill._id) Delete

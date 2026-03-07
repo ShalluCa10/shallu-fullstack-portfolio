@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Projects
+  a(href="/admin/projects/add") Add Project
+
+  each project in projects
+    div.card
+      h3= project.title
+      p= project.tech
+      a(href="/admin/projects/delete/"+project._id) Delete

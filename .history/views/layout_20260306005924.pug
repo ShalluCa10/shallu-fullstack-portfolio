@@ -1,0 +1,26 @@
+
+html
+  head
+    title Admin Dashboard
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+link(rel="stylesheet", href="/styles.css")
+  body
+
+    .container
+
+      aside.sidebar
+        h2.logo Portfolio Admin
+
+        ul.menu
+          li
+            a(href="/admin") Dashboard
+          li
+            a(href="/admin/projects") Projects
+          li
+            a(href="/admin/skills") Skills
+
+      main.content
+        header.topbar
+          h1 Admin Panel
+
+        block content

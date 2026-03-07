@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  h2 Projects
+
+  a.btn(href="/admin/projects/add") + Add Project
+
+  table
+    thead
+      tr
+        th Title
+        th Technologies
+        th Featured
+        th Actions
+
+    tbody
+      each project in projects
+        tr
+          td= project.title
+          td= project.technologies.join(", ")
+          td= project.featured ? "Yes" : "No"
+
+          td
+            a.small-btn(href="/admin/projects/edit/"+project._id) Edit
+            a.small-btn.delete(href="/admin/projects/delete/"+project._id) Delete

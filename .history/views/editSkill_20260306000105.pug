@@ -1,0 +1,36 @@
+extends layout
+
+block content
+
+  h2 Edit Skill
+
+  form(method="POST" action="/admin/skills/edit/"+skill._id)
+
+    label Title
+    input(type="text" name="title" value=skill. required)
+
+    label Description
+    textarea(name="description")= project.description
+
+    label Technologies
+    input(
+      type="text"
+      name="technologies"
+      value=project.technologies.join(", ")
+    )
+
+    label GitHub Link
+    input(type="text" name="githubLink" value=project.githubLink)
+
+    label Live Link
+    input(type="text" name="liveLink" value=project.liveLink)
+
+    label Featured
+    input(
+      type="checkbox"
+      name="featured"
+      checked=project.featured
+    )
+
+    br
+    button.btn(type="submit") Update Project

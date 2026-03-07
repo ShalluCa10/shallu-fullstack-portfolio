@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Skills
+  a(href="/admin/skills/add") Add Skill
+
+  each skill in skills
+    div.card
+      h3= skill.name
+      p= skill.level
+      a(href="/admin/skills/delete/"+skill._id) Delete
