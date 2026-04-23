@@ -9,8 +9,8 @@ router.get("/portfolio", async (req, res) => {
     const skills = await Skill.find();
 
     res.json({
-      name: "Sameera Shallu",
-      role: "Full Stack Developer | Flutter Developer",
+      name: "Sameera",
+      role: "Full Stack Developer",
       skills,
       projects,
 

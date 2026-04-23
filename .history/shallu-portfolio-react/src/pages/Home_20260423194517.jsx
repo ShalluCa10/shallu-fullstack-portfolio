@@ -25,7 +25,7 @@ const Home = () => {
         <div style={styles.socials}>
           <a href="https://github.com/ShalluCa10" style={styles.link}>GitHub</a>
           <a href="https://www.linkedin.com/in/shallu-sameera-aa5b85280/" style={styles.link}>LinkedIn</a>
-          <a href="https://www.instagram.com/sameera_always_smiles/" style={styles.link}>Instagram</a>
+          <a href="#" style={styles.link}>Instagram</a>
         </div>
       </header>
 
@@ -89,14 +89,14 @@ const Home = () => {
 
 export default Home;
 
-/*STYLES */
+/* 💖 STYLES */
 const styles = {
   page: {
     fontFamily: "Arial",
     background: "linear-gradient(135deg, #ffe4f2, #ffffff)",
     minHeight: "100vh",
     padding: "30px",
-    color: "#e2dede",
+    color: "#111",
   },
 
   loading: {

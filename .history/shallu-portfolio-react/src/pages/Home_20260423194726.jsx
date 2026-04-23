@@ -96,7 +96,7 @@ const styles = {
     background: "linear-gradient(135deg, #ffe4f2, #ffffff)",
     minHeight: "100vh",
     padding: "30px",
-    color: "#e2dede",
+    color: "#111",
   },
 
   loading: {

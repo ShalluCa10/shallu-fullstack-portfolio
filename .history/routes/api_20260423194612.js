@@ -10,7 +10,7 @@ router.get("/portfolio", async (req, res) => {
 
     res.json({
       name: "Sameera Shallu",
-      role: "Full Stack Developer | Flutter Developer",
+      role: "Full Stack Developer Enthusia",
       skills,
       projects,
 

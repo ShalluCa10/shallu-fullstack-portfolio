@@ -89,14 +89,14 @@ const Home = () => {
 
 export default Home;
 
-/*STYLES */
+/* 💖 STYLES */
 const styles = {
   page: {
     fontFamily: "Arial",
     background: "linear-gradient(135deg, #ffe4f2, #ffffff)",
     minHeight: "100vh",
     padding: "30px",
-    color: "#e2dede",
+    color: "#111",
   },
 
   loading: {
