@@ -6,8 +6,7 @@ import "dotenv/config";
 
 import adminRoutes from "./routes/admin.js";
 import apiRoutes from "./routes/api.js";
-import cors from "cors";
-app.use(cors());
+
 
 const __dirname = import.meta.dirname;
 
