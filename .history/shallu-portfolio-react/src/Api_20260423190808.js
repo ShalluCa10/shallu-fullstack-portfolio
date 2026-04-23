@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://shallu-fullstack-portfolio.onrender.com/api";
+const API_URL = "https://shallu-fullstack-portfolio.onrender.com/a";
 
 export const getPortfolio = async () => {
   try {
