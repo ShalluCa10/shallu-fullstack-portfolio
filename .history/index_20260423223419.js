@@ -18,7 +18,7 @@ app.use(
     origin: [
       "http://localhost:5177",
       "http://localhost:3000",
-      "https://shallu-portfolio-react.vercel.app/"
+      
     ]
   })
 );
