@@ -15,7 +15,12 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: true
+    origin: [
+      "http://localhost:5177",
+      "http://localhost:3000",
+      "https://shallu-portfolio-react.vercel.app"
+      
+    ]
   })
 );
 
